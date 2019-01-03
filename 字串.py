@@ -17,11 +17,12 @@ print(course[0])
 # 最後一個字元
 print(course[-1])
 
-# 使用「:」取得 a-n 字元
+# 使用「:」取得 (start index) ～（end index - 1） 字元
 print(course[0:3])
-print(course[0:])
+print(course[0:])  # 輸出是全部
 print(course[:3])
-print(course[:])
+print(course[:])  # 輸出是全部
+print(course[6:-1])  # 注意：輸出不包含最後一個字元
 
 # 跳脫字元
 print("\"跳脫字元\"")

@@ -1,18 +1,4 @@
-# int
-x = 100
-
-# float
-y = 4.99
-
-# blooen: 注意 Python 布林值首字必須為大寫
-is_right = True
-
-# string
-str = "Ray"
-# string：""" 用於有換行的文字段落
-long_str = """
-Hi Ray,
-welcome to start your python programming.
-"""
-
-print(long_str)
+# 讓使用者輸入值，結果是字串
+# 注意不能用runner快捷鍵執行，請打開 terminal 執行才能互動
+x = input("x: ")
+print(x)
