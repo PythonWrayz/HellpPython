@@ -17,3 +17,15 @@ else:
     print("It's cold")
 
 print("Done")
+
+# 三元 Ternary Operator
+age = 9
+
+# if age > 10:
+#     message = "Eligible"
+# else:
+#     message = "Not eligible"
+
+message = "Eligible" if age > 10 else "Not eligible"
+
+print(message)
