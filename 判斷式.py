@@ -1,6 +1,6 @@
 # if 語法幾點特別注意
-# 1. if expressiong 後面要加 :
-# 2. if 條件成立後內容沒有實用上下括號表示範圍，而是用縮排
+# 1. 以往有 () 表示條件的 expression，Python 也不用，而是用 : 做為條件 expression 結束
+# 2. 以往有 { } 表示條件成立後的 expression 範圍，Python 也不用 { }，而是用縮排
 
 temperature = 35
 
