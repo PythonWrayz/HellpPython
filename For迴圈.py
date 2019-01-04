@@ -20,6 +20,11 @@ for number in range(3):
 else:
     print("Attempted 3 times and failed")
 
+# 巢狀迴圈
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+
 
 # 注意一件事情，Python For Loop 要 iterate 的清單可以在途中被修改，甚至增加/刪除
 # 這樣的行為請避免，For Loop 每次 iterate 長度都會取清單現在長度，所以清單被刪除一個 item，那長度就會減 1，iterate 就會自動跳過原本的下一個 item
