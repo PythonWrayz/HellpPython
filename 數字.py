@@ -1,5 +1,6 @@
 # Python 有 3種 Number
 import math
+
 x = 1  # int
 y = 3.33  # float
 z = 1 + 2j  # a + bi: Complex number，就像數學公式
