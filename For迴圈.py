@@ -30,3 +30,13 @@ for x in range(5):
 # 這樣的行為請避免，For Loop 每次 iterate 長度都會取清單現在長度，所以清單被刪除一個 item，那長度就會減 1，iterate 就會自動跳過原本的下一個 item
 # 增加也是，這都是埋地雷的危險作法。
 # 如果有需要修改清單，請複製一份另外操作
+
+
+# 練習
+count = 0
+for i in range(1, 10):
+    if i % 2 == 0:
+        count += 1
+        print(i)
+
+print(f"We have {count} even number.")
