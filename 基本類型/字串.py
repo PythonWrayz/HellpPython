@@ -31,6 +31,7 @@ print("\\跳脫字元\\")
 # 換行
 print("Python \nProgramming")
 
+# Python 強調只用同型別才可以用 +，如果想要 Str + 其他型別變數就用 f
 # format string, 使用 f"" 再用{}裝變數（C# 用 $）
 first = "Ray"
 last = "Wu"
