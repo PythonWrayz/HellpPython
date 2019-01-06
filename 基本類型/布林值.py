@@ -2,10 +2,11 @@
 is_right = True
 is_right = False
 
-# Falsy: "", 0, None
+# Falsy: "", 0, None, []
 print(bool(""))
 print(bool(0))
 print(bool(None))
+print(bool([]))
 
 # Truthy: 除 Falsy 都是 True
 print(bool(1))
