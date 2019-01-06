@@ -10,6 +10,9 @@
 
 # set
 default_set = {1, 5}
+# 使用 Comprehensions 建立
+values = {x for x in range(5)}
+print(values)
 # 刪除重複項
 numbers = [1, 1, 2, 3, 4, 4]
 no_duplicate_set = set(numbers)

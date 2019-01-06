@@ -3,6 +3,9 @@ point = {"x": 1, "y": 2}
 # 建議寫法
 point = dict(x=1, y=2, z=3)
 print(point["x"])
+# 使用 comprehensions 建立
+values = {x: x * 2 for x in range(5)}
+print(values)
 # 修改值
 point["x"] = 10
 print(point["x"])

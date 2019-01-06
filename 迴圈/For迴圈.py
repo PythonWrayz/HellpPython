@@ -38,5 +38,14 @@ for i in range(1, 10):
     if i % 2 == 0:
         count += 1
         print(i)
-
 print(f"We have {count} even number.")
+# 使用 Comprehensions 改寫取得 偶數
+print([i for i in range(1, 10) if i % 2 == 0])
+
+# 練習2
+values = []
+for x in range(5):
+    values.append(x * 2)
+print(values)
+# 使用 Comprehensions 改寫
+print([x * 2 for x in range(5)])
