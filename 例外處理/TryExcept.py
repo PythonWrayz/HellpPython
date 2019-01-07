@@ -1,4 +1,5 @@
 # Python 的 try/catch
+# exception 可以上 https://docs.python.org/3/library/exceptions.html 查詢
 # try:
 #     pass
 # except expression as identifier:
