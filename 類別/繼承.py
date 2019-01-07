@@ -13,6 +13,11 @@ class Animal:
 
 
 class Human(Animal):
+    # overriding 建構式，如果 Base Constructor 也要執行的話，就要用 super()
+    def __init__(self):
+        super().__init__()
+        self.age = 30
+
     def walk(self):
         return "walk"
 
@@ -21,3 +26,4 @@ human = Human()
 print(human.tast)
 print(human.eat())
 print(human.walk())
+print(human.age)

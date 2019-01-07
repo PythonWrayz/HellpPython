@@ -1,3 +1,6 @@
+# https://docs.python.org/3/tutorial/classes.html
+
+
 class MyClass:
     # 屬性
     default_color = "Red"
