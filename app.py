@@ -15,3 +15,8 @@
 
 
 # fizz_buzz(1)
+
+a = [1, 2, 3]
+a.append("str")
+a.insert(2, "b")
+print(a)
