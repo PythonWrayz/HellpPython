@@ -10,11 +10,11 @@ if numbers.count(1) != 0:
     print(numbers.index(1))
 
 # Sort 排序
-# 會改變原 List 的方法
+# sort() 會改變原 List 的方法
 numbers.sort()  # 正序
 numbers.sort(reverse=True)  # 倒序
 print(numbers)
-# 不改變原 List，而是回傳結果的方法
+# sorted() 不改變原 List，而是回傳 tuple 結果的方法
 new_number = sorted(numbers)  # 正序
 print(new_number)
 new_number = sorted(numbers, reverse=True)  # 倒序
