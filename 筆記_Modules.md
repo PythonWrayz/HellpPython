@@ -7,7 +7,7 @@ Modules 可看做是 Files，一個 Module 就是一份檔案，裡頭有定義�
 
 - import module
 - import module as nickname
-  > 上面三種方式前提要 module 檔案在同一層
+  > 上面方式前提要 module 檔案在同一層
 - from folder import module1, module2
 - from . import module
 - from ..folder import module1, module2
@@ -17,14 +17,18 @@ Modules 可看做是 Files，一個 Module 就是一份檔案，裡頭有定義�
 - from module import \*
   > 不推薦
 
-## module 是 class
+## 匯入 module 的 class
 
 - import folder.module import class
-  一樣可用相對路徑
 
-小結：以後專案還是將 class 統一放在資料夾 Modles 比較方便。
+一樣可用相對路徑
 
-### import 陷阱
+**Ray 習慣**
+
+以後專案還是將 class 統一放在資料夾 Modles 比較方便。
+
+```txt
+import 陷阱
 
 moduleA 匯入 moduleB
 moduleB 也匯入 moduleA
@@ -36,7 +40,19 @@ from module import function
 
 就會變成 moduleA -> moduleB -> moduleA -> moduleB -> ...
 
-> 解決方法: 把匯入方式改成匯入整個 module 而不是 functionname 就可解決，因為這樣不會先執行 module，而是到了程式要使用 module.function 的時候執行另外被建立的 module instance
+[解決方法]
+把匯入方式改成匯入整個 module 而不是 functionname 就可解決，因為這樣不會先執行 module，而是到了程式要使用 module.function 的時候執行另外被建立的 module instance
+```
+
+## `__main__`
+
+在 module 加上這段判斷，當  module  是主要程式入口點時才執行 something，匯入的時候，因為 name 不是 main，所以 something 不會執行。
+
+```python
+# 當此 module 為主要入口點
+if __name__ == "__main__":
+    # do something
+```
 
 ## Packages
 
