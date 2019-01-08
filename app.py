@@ -16,7 +16,12 @@
 
 # fizz_buzz(1)
 
-a = [1, 2, 3]
-a.append("str")
-a.insert(2, "b")
-print(a)
+# a = [1, 2, 3]
+# a.append("str")
+# a.insert(2, "b")
+# print(a)
+
+import requests
+
+response = requests.get("http://www.google.com")
+print(response)
