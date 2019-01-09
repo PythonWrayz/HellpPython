@@ -21,7 +21,10 @@
 # a.insert(2, "b")
 # print(a)
 
-import requests
+# import requests
 
-response = requests.get("http://www.google.com")
-print(response)
+# response = requests.get("http://www.google.com")
+# print(response)
+
+for i in range(6):
+    print(i)
