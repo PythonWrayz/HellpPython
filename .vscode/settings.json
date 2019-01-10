@@ -1,5 +1,6 @@
 {
     "python.pythonPath": "/Users/ray/.local/share/virtualenvs/HelloPython-ub9JLj8R/bin/python3",
+    "python.envFile": "/Users/ray/.local/share/virtualenvs/HelloPython-ub9JLj8R",
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
