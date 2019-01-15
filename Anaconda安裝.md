@@ -19,7 +19,7 @@ Mac 安裝 Anaconda 有些眉角，花了不少時間搞定它。
 
 [Conda 文件](https://conda.io/docs/user-guide/install/macos.html#install-macos-silent)
 
-**重點**
+**環境設定**
 就只有一個 PATH 設定，才能在 terminal 直接下 `conda xxxxx`
 
 在網路上查到很多範例都是要設定環境變數 PATH
@@ -28,3 +28,19 @@ Mac 安裝 Anaconda 有些眉角，花了不少時間搞定它。
 但 Anaconda 在安裝的時候已經有設定好 PATH 在 `~/.bash_profile`，這是屬於個人帳號使用的環境變數，所以要自己記得啟動它 `source ~/.bash_profile`，之後才能直接下 `conda xxx`
 
 就這個讓我搞了很久，又學到一件事了，設定文件要好好看，很容易 miss 掉...
+
+## 指令
+
+conda 套件全部升級 `conda upgrade --all`
+
+建立開發環境 `conda create -n env_name list of packages`
+
+> list of packages: pandas matplotlib ...
+
+列出 conda 存在的開發環境 `conda env list`
+
+移除特定開發環境 `conda env remove -n env_name`
+
+啟動開發環境 `conda activate env_name`
+
+列出環境下有安裝的所有套件 `conda list`
